@@ -12,4 +12,6 @@ Console.WriteLine("Kvadrat = " + Kvadrat);
 
 
 //Задача 2
-//Console.WriteLine("Vvedi pervoe: ");
+Console.Write("Vvedi chislo: ");
+
+int 
