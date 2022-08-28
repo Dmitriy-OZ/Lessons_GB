@@ -10,17 +10,37 @@
 //              123546           3
 int FindNum(int number, int razryd)
 {
-   string numST =  ;
-   Console.WriteLine($" {number}");
-   return 0;
+    string numST = number.ToString();
+
+    char[] array = new char[numST.Length];
+    for (int i = 0; i < numST.Length; i++)
+    {
+        array[i] = numST[i];
+        //Console.WriteLine($" i = {i} - {array[i]}");
+    }
+
+    return Convert.ToInt32(Convert.ToString(array[razryd-1]));
 }
+
 Console.Clear();
 Console.Write("Ведите число для разбора: ");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ведите номер разряда: ");
 int razryd = Convert.ToInt32(Console.ReadLine());
 
-FindNum(number, razryd);
+//проверка что в числе разрядов больше чем запрашивается
+string numST1 = number.ToString();
+
+if (numST1.Length >= razryd)
+{
+   Console.WriteLine($" {FindNum(number, razryd)}");
+}
+else
+{
+   Console.WriteLine($" В этом числе нет столько цифр");
+}
+
+//Console.WriteLine(Convert.ToInt32(Convert.ToString(c)));
 /*
 Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
