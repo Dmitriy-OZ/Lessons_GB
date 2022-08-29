@@ -108,8 +108,6 @@ string number = Convert.ToString(Console.ReadLine());
 int intnum = Convert.ToInt32(number);
 if (intnum > 1 & intnum < 7)
 {
-
-
     if (number == array[5] | number == array[6])
     {
         Console.WriteLine($" Сегодня выходной!!!");
