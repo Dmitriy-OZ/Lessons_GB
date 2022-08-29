@@ -99,17 +99,37 @@ else
 7 -> да
 1 -> нет
 */
+/*
 //             0 1 2 3 4 5 6
-string[] array = {"0","0","0","0","0","1","1"};
+string[] array = { "1", "2", "3", "4", "5", "6", "7" };
 Console.Write("Ведите день недели(от 1 до 7): ");
 string number = Convert.ToString(Console.ReadLine());
-if (number == array[5] | number == array[6])
+
+int intnum = Convert.ToInt32(number);
+if (intnum > 1 & intnum < 7)
 {
-   Console.WriteLine($" Сегодня выходной!!!");
+
+
+    if (number == array[5] | number == array[6])
+    {
+        Console.WriteLine($" Сегодня выходной!!!");
+    }
+    else
+    {
+        //Console.WriteLine($"  {array.Length}");
+        //Console.WriteLine($"  {number}");
+        if (number == array[4])
+        {
+            Console.WriteLine($" Уже завтра выходной!!!");
+        }
+        else
+        {
+            Console.WriteLine($" Придется поработать еще {array.Length - 2 - Convert.ToInt32(number)} денька");
+        }
+    }
 }
 else
 {
-   //Console.WriteLine($"  {array.Length}");
-   //Console.WriteLine($"  {number}");
-   Console.WriteLine($" Придется еще поработать {array.Length - 2 - Convert.ToInt32(number)} денька");
+   Console.WriteLine($" Введено не корректное число {number}. Нужно ввести число от 1 до 7...");
 }
+*/
