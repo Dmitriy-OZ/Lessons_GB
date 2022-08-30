@@ -99,7 +99,7 @@ else
 //Задание 4//Задание 4//Задание 4//Задание 4//Задание 4//Задание 4//Задание 4
 //Задача 8: Напишите программу, которая на вход принимает число (N), 
 //а на выходе показывает все чётные числа от 1 до N.
-/*
+
 Console.Clear();
 Console.Write("Enter number: ");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -115,7 +115,7 @@ while (num < number)
     num = num + step;
 }
 Console.Write(" \n");
-*/
+
 
 
 

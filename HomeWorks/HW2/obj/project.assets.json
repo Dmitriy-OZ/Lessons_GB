@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\I_AM\\.nuget\\packages\\": {}
+    "C:\\Users\\da_belousov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_GB\\Lesson3_1\\HomeWorks\\HW2\\HW2.csproj",
+      "projectUniqueName": "C:\\VSCode\\Lessons_GB_Work\\Lessons_GB\\HomeWorks\\HW2\\HW2.csproj",
       "projectName": "HW2",
-      "projectPath": "C:\\_GB\\Lesson3_1\\HomeWorks\\HW2\\HW2.csproj",
-      "packagesPath": "C:\\Users\\I_AM\\.nuget\\packages\\",
-      "outputPath": "C:\\_GB\\Lesson3_1\\HomeWorks\\HW2\\obj\\",
+      "projectPath": "C:\\VSCode\\Lessons_GB_Work\\Lessons_GB\\HomeWorks\\HW2\\HW2.csproj",
+      "packagesPath": "C:\\Users\\da_belousov\\.nuget\\packages\\",
+      "outputPath": "C:\\VSCode\\Lessons_GB_Work\\Lessons_GB\\HomeWorks\\HW2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\I_AM\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\da_belousov\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\VSCode\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
