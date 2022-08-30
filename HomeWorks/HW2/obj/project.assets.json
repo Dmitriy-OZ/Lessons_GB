@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\VSCode\\Lessons_GB_Work\\Lessons_GB\\HomeWorks\\HW2\\HW2.csproj",
+      "projectUniqueName": "C:\\Lessons_GB\\Lessons_GB\\HomeWorks\\HW2\\HW2.csproj",
       "projectName": "HW2",
-      "projectPath": "C:\\VSCode\\Lessons_GB_Work\\Lessons_GB\\HomeWorks\\HW2\\HW2.csproj",
+      "projectPath": "C:\\Lessons_GB\\Lessons_GB\\HomeWorks\\HW2\\HW2.csproj",
       "packagesPath": "C:\\Users\\da_belousov\\.nuget\\packages\\",
-      "outputPath": "C:\\VSCode\\Lessons_GB_Work\\Lessons_GB\\HomeWorks\\HW2\\obj\\",
+      "outputPath": "C:\\Lessons_GB\\Lessons_GB\\HomeWorks\\HW2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\da_belousov\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\VSCode\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
