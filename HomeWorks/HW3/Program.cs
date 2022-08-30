@@ -33,19 +33,20 @@ Kub(number, step);
 */
 void IsThisPoliandr(int number)
 {
-    bool result = true;
+    bool result = false;
 
     //проверка на полиандер...
-    //char[] array = new char[numST.Length];
-    string[] arrNumber = new[Convert.ToString[number].Length];
+    string numST = number.ToString();
+    string[] arrNumber = new string[numST.Length];
 
     int schet = 0;
-    while (schet <= Convert.ToString[number].Length)
+    while (schet < numST.Length)
     {
-        
+        Console.Write($" {numST[schet]}");
+        Console.Write(" ");
         schet++;
     }
-
+    Console.WriteLine(" ");
     Console.Write($" It's poliander  - {result}");
 }
 
