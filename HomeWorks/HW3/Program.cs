@@ -56,7 +56,7 @@ Kub(number);
 12821 -> да
 23432 -> да
 */
-
+/*
 void IsThisPaliandrom(string number)
 {
     bool pal = false;
@@ -83,3 +83,4 @@ Console.Write("Введите число: ");
 string  number = Convert.ToString(Console.ReadLine());
 
 IsThisPaliandrom(number);
+*/
