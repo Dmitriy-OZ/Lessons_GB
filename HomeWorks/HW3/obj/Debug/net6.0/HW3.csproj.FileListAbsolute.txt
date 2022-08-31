@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\_GB\Lesson3_1\HomeWorks\HW3\bin\Debug\net6.0\HW3.exe
 C:\_GB\Lesson3_1\HomeWorks\HW3\bin\Debug\net6.0\HW3.deps.json
 C:\_GB\Lesson3_1\HomeWorks\HW3\bin\Debug\net6.0\HW3.runtimeconfig.json
@@ -13,3 +14,20 @@ C:\_GB\Lesson3_1\HomeWorks\HW3\obj\Debug\net6.0\refint\HW3.dll
 C:\_GB\Lesson3_1\HomeWorks\HW3\obj\Debug\net6.0\HW3.pdb
 C:\_GB\Lesson3_1\HomeWorks\HW3\obj\Debug\net6.0\HW3.genruntimeconfig.cache
 C:\_GB\Lesson3_1\HomeWorks\HW3\obj\Debug\net6.0\ref\HW3.dll
+=======
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\bin\Debug\net6.0\HW3.exe
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\bin\Debug\net6.0\HW3.deps.json
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\bin\Debug\net6.0\HW3.runtimeconfig.json
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\bin\Debug\net6.0\HW3.dll
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\bin\Debug\net6.0\HW3.pdb
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.csproj.AssemblyReference.cache
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.AssemblyInfoInputs.cache
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.AssemblyInfo.cs
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.csproj.CoreCompileInputs.cache
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.dll
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\refint\HW3.dll
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.pdb
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\HW3.genruntimeconfig.cache
+C:\Lessons_GB\Lessons_GB\HomeWorks\HW3\obj\Debug\net6.0\ref\HW3.dll
+>>>>>>> ee1fbba9ae6d0306fc358f421d29e2fc0742b44f

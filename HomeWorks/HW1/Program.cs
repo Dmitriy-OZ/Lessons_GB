@@ -115,8 +115,8 @@ while (num < number)
     num = num + step;
 }
 Console.Write(" \n");
-*/
 
+*/
 
 
 
