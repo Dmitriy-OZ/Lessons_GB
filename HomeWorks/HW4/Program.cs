@@ -64,19 +64,7 @@ SumNumber(number);
 6, 1, 33 -> [6, 1, 33]
 */
 /*
-void PrintArryMy(string numberLength1);
-{
-    //int size = Convert.ToInt32(numberLength1);
-    //string s = Console.ReadLine();
-    int[] array1 = new int[Convert.ToInt32(numberLength1)];
-    var r = new Random();
-    for (int i = 0; i < array1.Length; i++)
-    {
-        array1[i] = r.Next(10, 50);
-        Console.WriteLine($" {Convert.ToString(array1[i])}");
-    }
-}
-*/
+
 
 void PrintingArryMy(string num)
 {
@@ -105,3 +93,4 @@ Console.Write("Ведите длинну массива: ");
 string numberLength1 = Console.ReadLine();
 
 PrintingArryMy(numberLength1);
+*/
