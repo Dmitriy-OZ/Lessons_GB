@@ -31,6 +31,7 @@ Kub(number, step);
 12821 -> да
 23432 -> да
 */
+/*
 void IsThisPoliandr(int number)
 {
     bool result = false;
@@ -55,3 +56,4 @@ Console.Write("Vvedi chislo: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 IsThisPoliandr(number);
+*/
