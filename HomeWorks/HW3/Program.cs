@@ -1,59 +1,94 @@
 ﻿/*
+Задача 21
+Напишите программу, которая принимает на вход координаты двух точек и 
+находит расстояние между ними в 3D пространстве.
+*/
+/*
+void raschet(int x1, int x2, int y1, int y2, int z1, int z2)
+{
+    double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
+    Console.WriteLine($"Расстояние между двумя точками в 3D равно {distance}");
+}
+
+Console.Write("Введите координаты x1: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты y1: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты z1: ");
+int z1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите координаты x2: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты y2: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите координаты z2: ");
+int z2 = Convert.ToInt32(Console.ReadLine());
+
+raschet(x1, x2, y1, y2, z1, z2);
+*/
+/*
 Задача 23
-
-Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
-
+Напишите программу, которая принимает на вход число (N) и выдаёт 
+таблицу кубов чисел от 1 до N.
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125
 */
 /*
-void Kub(int number, int step)
+void Kub(int number)
 {
-    while (step <= number)
-    {
-        Console.Write($" {step*step*step} ");
-        Console.Write(" ");
-        step++;
-    }
-
+   for (int i = 1; i <= number; i++)
+   {
+        Console.WriteLine($" {i*i*i}");
+   }
 }
 
-Console.Clear();
-Console.Write("Vvedi chislo: ");
+Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int step = 1;
-Kub(number, step);
 
+Kub(number);
 */
+
 /*
-Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+Задача 19
+Напишите программу, которая принимает на вход пятизначное число 
+и проверяет, является ли оно палиндромом.
 14212 -> нет
 12821 -> да
 23432 -> да
 */
 /*
+<<<<<<< HEAD
 void IsThisPoliandr(int number)
+=======
+void IsThisPaliandrom(string number)
+>>>>>>> f52e359de407aadefa87d7a16718f6697ecc340e
 {
-    bool result = false;
-
-    //проверка на полиандер...
-    string numST = number.ToString();
-    string[] arrNumber = new string[numST.Length];
-
-    int schet = 0;
-    while (schet < numST.Length)
+    bool pal = false;
+    for (int i = 0; i < number.Length / 2; i++)
+        if (number[i] != number[number.Length - 1 - i])
+            {
+                pal = false;
+                break; //наверно смысл дальнейшей проверкой отсутствует
+            } 
+        else
+            pal = true;
+    if (pal)
     {
-        Console.Write($" {numST[schet]}");
-        Console.Write(" ");
-        schet++;
+        Console.WriteLine($" Число {number} является палиндромом!");
     }
-    Console.WriteLine(" ");
-    Console.Write($" It's poliander  - {result}");
+    else
+    {
+        Console.WriteLine($" Число {number} палиндромом не является!");
+    }
 }
 
 Console.Clear();
-Console.Write("Vvedi chislo: ");
-int number = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число: ");
+string  number = Convert.ToString(Console.ReadLine());
 
+<<<<<<< HEAD
 IsThisPoliandr(number);
+=======
+IsThisPaliandrom(number);
+>>>>>>> f52e359de407aadefa87d7a16718f6697ecc340e
 */
