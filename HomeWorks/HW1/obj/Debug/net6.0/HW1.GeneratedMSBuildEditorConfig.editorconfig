@@ -7,4 +7,8 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HW1
-build_property.ProjectDir = c:\_GB\Lesson3_1\HomeWorks\HW1\
+<<<<<<< HEAD
+build_property.ProjectDir = c:\Lessons_GB\Lessons_GB\Lessons_GB\HomeWorks\HW1\
+=======
+build_property.ProjectDir = c:\Lessons_GB\Lessons_GB\HomeWorks\HW1\
+>>>>>>> d31b65a9ea5296ea8535addd25b1ecdc80b4919d

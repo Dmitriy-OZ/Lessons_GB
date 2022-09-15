@@ -57,7 +57,11 @@ Kub(number);
 23432 -> да
 */
 /*
+<<<<<<< HEAD
+void IsThisPoliandr(int number)
+=======
 void IsThisPaliandrom(string number)
+>>>>>>> f52e359de407aadefa87d7a16718f6697ecc340e
 {
     bool pal = false;
     for (int i = 0; i < number.Length / 2; i++)
@@ -82,5 +86,9 @@ Console.Clear();
 Console.Write("Введите число: ");
 string  number = Convert.ToString(Console.ReadLine());
 
+<<<<<<< HEAD
+IsThisPoliandr(number);
+=======
 IsThisPaliandrom(number);
+>>>>>>> f52e359de407aadefa87d7a16718f6697ecc340e
 */
