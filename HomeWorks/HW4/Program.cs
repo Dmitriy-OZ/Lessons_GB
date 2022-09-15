@@ -94,4 +94,3 @@ string numberLength1 = Console.ReadLine();
 
 PrintingArryMy(numberLength1);
 */
-qweeq
