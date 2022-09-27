@@ -78,6 +78,7 @@ Print2DArray(Sort2DArray);
 с наименьшей суммой элементов: 1 строка
 */
 /*
+
 void Print2DArray(int[,] Array2D)
 {
     for (int i = 0; i < Array2D.GetLength(0); i++)
@@ -91,7 +92,8 @@ void Print2DArray(int[,] Array2D)
     }
     Console.WriteLine();
 }
-
+/*
+/*
 int[,] CreateNewRNDArray(int n, int m, int minValue, int maxValue)
 {
     int[,] arr = new int[n, m];
@@ -101,7 +103,7 @@ int[,] CreateNewRNDArray(int n, int m, int minValue, int maxValue)
             arr[i, j] = rng.Next(minValue, maxValue);
     return arr;
 }
-
+/*
 void ShowMinSumInLine(int[,] new2DArray)
 {
     int SummInLine = 0;
@@ -147,9 +149,39 @@ ShowMinSumInLine(new2DArray);
 18 20
 15 18
 */
-
 /*
-Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
+int [,] MultiplayArray(int[,] arr1, int [,] arr2)
+{
+    int sum =0;
+    int [,] res = new int [arr1.GetLength(0), arr2.GetLength(1)];
+    if (arr1.GetLength(1) != arr2.GetLength(0))
+        return res;
+    for (int i = 0; i < res.GetLength(0); i++)
+        for (int j = 0; j < res.GetLength(1); j++)
+            for (int k = 0; k < arr2.GetLength(0); k++)
+                res[i,j] += arr1[i,k]*arr2[k,j];
+    return res;                
+}
+
+Console.Clear();
+
+Console.WriteLine();
+Random rng = new Random();
+int LineColo = rng.Next(2, 4);
+int[,] new2DArray1 = CreateNewRNDArray(LineColo, LineColo, rng.Next(1, 40), rng.Next(41, 99));
+int[,] new2DArray2 = CreateNewRNDArray(LineColo, LineColo, rng.Next(1, 40), rng.Next(41, 99));
+//int[,] new2DArray = CreateNewRNDArray(3, 3, rng.Next(1, 40), rng.Next(41, 99));
+Console.WriteLine("First array: ");
+Print2DArray(new2DArray1);
+Console.WriteLine("Second array: ");
+Print2DArray(new2DArray2);
+   
+int [,] newArrOfX = MultiplayArray(new2DArray1, new2DArray2);
+Print2DArray(newArrOfX);
+*/
+/*
+Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. 
+Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 Массив размером 2 x 2 x 2
 66(0,0,0) 25(0,1,0)
 34(1,0,0) 41(1,1,0)
