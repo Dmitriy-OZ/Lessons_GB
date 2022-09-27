@@ -1,7 +1,7 @@
 ﻿/*// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 */
-    //Home work 8
+//Home work 8
 /*
 Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
 Например, задан массив:
@@ -77,6 +77,7 @@ Print2DArray(Sort2DArray);
 Программа считает сумму элементов в каждой строке и выдаёт номер строки 
 с наименьшей суммой элементов: 1 строка
 */
+/*
 void Print2DArray(int[,] Array2D)
 {
     for (int i = 0; i < Array2D.GetLength(0); i++)
@@ -101,33 +102,42 @@ int[,] CreateNewRNDArray(int n, int m, int minValue, int maxValue)
     return arr;
 }
 
-int [,] SortLineInArray(int [,] new2DArray)
+void ShowMinSumInLine(int[,] new2DArray)
 {
-    int maxIndex, temp;
-    for (int k = 0; k < new2DArray.GetLength(0); k++)
-        for (int i = 0; i < new2DArray.GetLength(1); i++)
-        {   
-            maxIndex =  i;
-            for (int j = i+1; j < new2DArray.GetLength(1); j++)
-                if (new2DArray[k,j] > new2DArray[k, maxIndex])
-                    maxIndex  = j;
-            temp = new2DArray[k, maxIndex];
-            new2DArray[k, maxIndex] = new2DArray[k, i];
-            new2DArray[k,i] = temp;
+    int SummInLine = 0;
+    int SummInLineTemp = 0;
+    int NumberMinLine = 0;
+    for (int i = 0; i < new2DArray.GetLength(0); i++)
+    {
+        //SummInLineTemp = SummInLine;
+        SummInLine = 0;
+
+        for (int j = 0; j < new2DArray.GetLength(1); j++)
+        {
+            SummInLine += new2DArray[i, j];
+        }
+        if (i == 0)
+            SummInLineTemp = SummInLine;
+        else if (SummInLineTemp > SummInLine)
+        {
+            SummInLineTemp = SummInLine;
+            NumberMinLine = i;    
+        }
+        Console.WriteLine($" Sum of line is {SummInLine}");
     }
-    return new2DArray;
+    Console.WriteLine($" MIN sum of line is {SummInLineTemp} in line {NumberMinLine + 1}");
 }
 
 Console.Clear();
 Console.WriteLine();
 Random rng = new Random();
-int[,] new2DArray = CreateNewRNDArray(rng.Next(3, 10), rng.Next(3, 10), rng.Next(1, 40), rng.Next(41, 99));
+int LineColo = rng.Next(3, 10);
+int[,] new2DArray = CreateNewRNDArray(LineColo, LineColo, rng.Next(1, 40), rng.Next(41, 99));
+//int[,] new2DArray = CreateNewRNDArray(3, 3, rng.Next(1, 40), rng.Next(41, 99));
 Print2DArray(new2DArray);
 Console.WriteLine();
-//теперь надо упорядочить построчно по убыванию
-int[,] Sort2DArray = SortLineInArray(new2DArray);
-Print2DArray(Sort2DArray);
-
+ShowMinSumInLine(new2DArray);
+*/
 /*
 Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Например, даны 2 матрицы:
