@@ -77,8 +77,8 @@ Print2DArray(Sort2DArray);
 Программа считает сумму элементов в каждой строке и выдаёт номер строки 
 с наименьшей суммой элементов: 1 строка
 */
-/*
 
+/*
 void Print2DArray(int[,] Array2D)
 {
     for (int i = 0; i < Array2D.GetLength(0); i++)
@@ -92,7 +92,7 @@ void Print2DArray(int[,] Array2D)
     }
     Console.WriteLine();
 }
-/*
+*/
 /*
 int[,] CreateNewRNDArray(int n, int m, int minValue, int maxValue)
 {
@@ -103,6 +103,7 @@ int[,] CreateNewRNDArray(int n, int m, int minValue, int maxValue)
             arr[i, j] = rng.Next(minValue, maxValue);
     return arr;
 }
+*/
 /*
 void ShowMinSumInLine(int[,] new2DArray)
 {
@@ -139,7 +140,7 @@ int[,] new2DArray = CreateNewRNDArray(LineColo, LineColo, rng.Next(1, 40), rng.N
 Print2DArray(new2DArray);
 Console.WriteLine();
 ShowMinSumInLine(new2DArray);
-*/
+
 /*
 Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Например, даны 2 матрицы:
@@ -188,6 +189,68 @@ Print2DArray(newArrOfX);
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1)
 */
+////////////////////////////
+/*
+int[,,] CreateMatrix(int line, int column, int dep, int min, int max)
+{
+    int[,,] matrix = new int[line, column, dep];
+    Random rnd = new Random();
+
+    bool numisfind = true; //число уже использовалось
+
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            for (int k = 0; k < matrix.GetLength(2); k++)
+            {
+                matrix[i, j, k] = rnd.Next(min, max + 1);
+                while (numisfind)
+                {
+                    for (int a = 0; a < matrix.GetLength(0); a++)
+                    {
+                        for (int b = 0; b < matrix.GetLength(1); b++)
+                        {
+                            for (int c = 0; c < matrix.GetLength(2); c++)
+                                if (matrix[i, j, k] == matrix[a, b, c])
+                                {
+                                    matrix[i, j, k] = rnd.Next(matrix[i, j, k]-1, max + 1);
+                                }
+                                else
+                                {
+                                    numisfind = false;
+                                    break;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return matrix;
+}
+
+void PrintMatrix(int[,,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        Console.Write("");
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            for (int k = 0; k < matrix.GetLength(2); k++)
+            {
+                Console.Write($"| {matrix[i, j, k]}({i},{j},{k}) ");
+            }
+            Console.Write(" |");
+            Console.WriteLine();
+        }
+    }
+}
+
+int[,,] array3D = CreateMatrix(2, 2, 2, 10, 99);
+PrintMatrix(array3D);
+*/
+////////////////////////////
 /*
 Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 Например, на выходе получается вот такой массив:
@@ -196,3 +259,34 @@ Print2DArray(newArrOfX);
 11 16 15 06
 10 09 08 07
 */
+/*
+int N = 4, M = 4;
+int[,] Array = new int[N, M];
+
+int line = 0, column = 0, d_x = 1, d_y = 0, dirChanges = 0, stop = M;
+
+for (int i = 0; i < Array.Length; i++)
+{
+    Array[column, line] = i + 1;
+    if (--stop == 0)
+    {
+        stop = M * (dirChanges % 2) + N * ((dirChanges + 1) % 2) - (dirChanges / 2 - 1) - 2;
+        int temp = d_x;
+        d_x = -d_y;
+        d_y = temp;
+        dirChanges++;
+    }
+    column += d_y;
+    line += d_x;
+}
+
+for (int i = 0; i < N; i++)
+{
+    for (int j = 0; j < M; j++)
+    {
+        Console.Write(Array[i, j].ToString("00.##") + " ");
+    }
+    Console.WriteLine();
+}
+*/
+
